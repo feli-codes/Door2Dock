@@ -1,0 +1,53 @@
+name: Collect Bike Data
+
+on:
+  schedule:
+    # Alle 5 Minuten (GitHub Actions Minimum)
+    # --burst Modus sammelt intern 5x jede Minute = effektiv jede Minute
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Manueller Trigger zum Testen
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: bike-collector
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Create data directory
+        run: mkdir -p data
+
+      - name: Collect bike data (5 cycles, 1 per minute)
+        run: python bike_collector.py --burst
+
+      - name: Show stats
+        run: python bike_collector.py --stats
+
+      - name: Commit and push database
+        run: |
+          git config user.name "Bike Collector Bot"
+          git config user.email "bot@noreply.github.com"
+          git add -f data/commute.db
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 data $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main
+            git push origin main
+          fi
