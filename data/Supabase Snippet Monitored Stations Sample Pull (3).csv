@@ -1,0 +1,22 @@
+station_id,station_name,latitude,longitude,distance_m,walking_distance_m,walking_duration_s
+BikePoints_392,"Imperial College, Knightsbridge",51.499428,-0.179702,340,459,118
+BikePoints_878,"Victoria & Albert Museum, South Kensington",51.495898,-0.173009,348,459,88
+BikePoints_258,"Kensington Gore, Knightsbridge",51.501432,-0.178656,391,788,147
+BikePoints_266,"Queen's Gate (North), Kensington",51.501026,-0.180246,445,603,135
+BikePoints_150,"Holy Trinity Brompton, Knightsbridge",51.497056,-0.168917,457,805,144
+BikePoints_378,"Natural History Museum, South Kensington",51.495592,-0.179077,459,1135,189
+BikePoints_350,"Queen's Gate, Kensington Gardens",51.501715,-0.179854,472,688,154
+BikePoints_356,"South Kensington Station, South Kensington",51.494412,-0.173881,493,568,99
+BikePoints_231,"Queen's Gate (Central), South Kensington",51.493967,-0.178732,599,953,160
+BikePoints_97,"Gloucester Road (North), Kensington",51.497924,-0.183834,626,878,183
+BikePoints_113,"Gloucester Road (Central), South Kensington",51.496462,-0.183289,636,1044,206
+BikePoints_292,"Montpelier Street, Knightsbridge",51.498884,-0.165471,653,1109,184
+BikePoints_300,"Serpentine Car Park, Hyde Park",51.505014,-0.17306,703,1069,190
+BikePoints_405,"Gloucester Road Station, South Kensington",51.494185,-0.18267,743,1279,213
+BikePoints_187,"Queen's Gate (South), South Kensington",51.492479,-0.178433,744,1071,187
+BikePoints_404,"Palace Gate, Kensington Gardens",51.502042,-0.1844,750,952,197
+BikePoints_36,"De Vere Gardens, Kensington",51.501737,-0.18498,770,1013,211
+BikePoints_163,"Sloane Avenue, Knightsbridge",51.493184,-0.167894,791,1188,202
+BikePoints_428,"Exhibition Road, Knightsbridge",51.499917,-0.174554,126,349,69
+BikePoints_432,"Exhibition Road Museums 1, South Kensington",51.496468,-0.173796,270,344,65
+BikePoints_482,"Exhibition Road Museums 2, South Kensington",51.495947,-0.173689,328,403,73
