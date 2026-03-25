@@ -1,12 +1,10 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-// ===== CHANGE THESE 4 VALUES =====
 const char* WIFI_SSID    = ""; //deleted for privacy
 const char* WIFI_PASS    = ""; //deleted for privacy
 const char* SUPABASE_URL = "https://ywoquxtqqzkoxakrxhfd.supabase.co";
 const char* SUPABASE_KEY = ""; //deleted for privacy
-// ==================================
 
 const int ANALOG_PIN = 1;
 const unsigned long INTERVAL_MS = 10000; // 10 seconds
