@@ -2,7 +2,7 @@
 
 A predictive system that forecasts Santander Cycles docking station availability near Imperial College London and provides context-aware commute recommendations.
 
-By fusing physical sensor data (PIR motion sensor on ESP32, DHT22 temperature sensor) with public real-time data streams (TfL Bike API, Open-Meteo Weather API), Door2Dock tells you — before you leave home — whether your target station will have bikes or docks available.
+By fusing physical sensor data (PIR motion sensor on ESP32, DHT22 temperature sensor) with public real-time data streams (TfL Bike API, Open-Meteo Weather API), Door2Dock tells you, before you leave home, whether your target station will have bikes or docks available.
 
 **Live app:** [smart-commute-imperial.herokuapp.com](https://smart-commute-imperial-0cac549c4dd9.herokuapp.com/)
 
@@ -10,12 +10,12 @@ By fusing physical sensor data (PIR motion sensor on ESP32, DHT22 temperature se
 
 ## Features
 
-- **Now** — Real-time recommendation for the best station to dock or pick up a bike, with a T+15 min availability prediction
-- **Plan** — Set a future arrival time and day to get a station recommendation based on forecasted availability
-- **Insights** — Data exploration: hourly/weekly heatmaps, weather correlations, model performance metrics, system architecture overview
-- **Settings** — Reorder preferred stations, configure commute defaults, Telegram push notifications, appearance (light/dark/system)
-- **Onboarding tour** — Guided walkthrough for first-time visitors
-- **Telegram alerts** — Push notifications triggered by the PIR motion sensor when you leave home
+- **Now**: Real-time recommendation for the best station to dock or pick up a bike, with a T+15 min availability prediction
+- **Plan**: Set a future arrival time and day to get a station recommendation based on forecasted availability
+- **Insights**: Data exploration: hourly/weekly heatmaps, weather correlations, model performance metrics, system architecture overview
+- **Settings**: Reorder preferred stations, configure commute defaults, Telegram push notifications, appearance (light/dark/system)
+- **Onboarding tour**: Guided walkthrough for first-time visitors
+- **Telegram alerts**: Push notifications triggered by the PIR motion sensor when you leave home
 
 ---
 
